@@ -34,6 +34,18 @@ body {
     width: 400px;
 }
 
+
+.logoTitle
+{
+	margin-top:2%;
+	margin-left:2%;
+	
+	width: 50%;
+	
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 5em;
+}
+
 .form {
     padding: 10px 20px;
 }

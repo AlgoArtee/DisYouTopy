@@ -3,13 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Laboratory Sheet</title>
+	
+	<!-- Font section -->
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="../css/signUp.css">
 	
 </head>
 
 <body>
+
+	<header class="main-header">
+		<div class="logoTitle">
+			<a href="../index.html">DisYouTopy</a>
+		</div>
+	</header>
+
+	<br> <br>
+
+
     <div class="container">
-        <form id="dataUser" class="form">
+        <form id="dataUser" class="form" action="jsp/SignUp.jsp" method="post">
             <h1>Start the Journey to your Self, through the exciting dimensions of Science!</h1>
             
             <div class="form-field">
@@ -35,8 +49,7 @@
                 <input type="text" name="city" id="city" autocomplete="off">
                 <small></small>
             </div>			
-            
-            
+             
             <div class="form-field">
                 <label for="postalCode">Postal Code:</label>
                 <input type="text" name="postalCode" id="postalCode" autocomplete="off">
@@ -53,6 +66,18 @@
             <div class="form-field">
                 <label for="birthDate">Birth Date:</label>
                 <input type="text" name="birthDate" id="birthDate" autocomplete="off">
+                <small></small>
+            </div>
+            
+            <div class="form-field">
+                <label for="username">User Name:</label>
+                <input type="text" name="username" id="username" autocomplete="off">
+                <small></small>
+            </div>
+            
+            <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" autocomplete="off">
                 <small></small>
             </div>
 
