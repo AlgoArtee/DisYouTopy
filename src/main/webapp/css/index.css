@@ -1,0 +1,219 @@
+@charset "ISO-8859-1";
+
+/*Testing*/
+*{
+	border: 1px solid blue;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	background-image: url(../img/bgd/main_bgd.jpg);
+}
+
+.wrapper
+{
+	background-color: #C7DBC9;
+	height:900px;
+}
+
+.main-header
+{
+	background-color: #75B379;
+}
+
+.main-footer
+{
+	background-color: #075C0C;
+}
+
+#signUpButton
+{
+	margin-left:4%;
+	background-color: #75B379;
+	height:20px;
+	width: 100px;
+	text-align: center;
+	border-style: outset;
+}
+
+
+/*Grid Layout Elements*/
+
+.main-header {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+.side {
+  grid-area: sidebar;
+}
+.catshop {
+  grid-area: catshop;
+}
+.main-footer {
+  grid-area: footer;
+}
+
+
+/*Mobile View */
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "catshop"
+    "footer";
+}
+
+
+
+/* --- Header Style*/
+
+.main-header
+{
+	height:100px;
+	margin: 0;
+	padding: 0;
+}
+
+.logoTitle
+{
+	margin-top:2%;
+	margin-left:2%;
+	
+	width: 50%;
+	
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 5em;
+}
+
+
+.main-nav
+{
+	height:50px;
+}
+
+.main-nav ul
+{
+	height:100%;
+	list-style-type: none;
+}
+
+.main-nav ul li
+{
+	height:100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+.main-nav ul li a
+{
+	display: block;
+	
+	text-decoration: none;
+	text-align: center;
+	line-height:1.5;
+	
+	font-size: 1.25em; /* 20px/16=1.25em */
+	
+	height:100%;
+	width: 100%;
+}
+
+
+
+
+
+
+/* Design for different Viewports */
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "catshop footer";
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header	header	header"
+      "nav	nav	nav"
+      "content	content	sidebar"
+      "content	content	catshop"
+      "footer	footer	footer"
+   }
+   
+   
+	/* --- Header Style*/
+
+	.main-header
+	{
+		height:150px;
+	}
+	
+	.main-nav
+	{
+		margin-top:-20px;
+	}
+	   
+   
+   
+	.main-nav ul 
+	{
+	    flex-direction: row;
+	}
+	
+	.main-nav ul li
+	{
+	
+		/*float: left;*/
+		height:100%;
+		width: 25%;
+		margin: 0;
+		padding: 0;
+	}
+   
+   .main-nav ul li a
+	{
+		line-height:1.5;
+		
+		font-size: 1.875em; /* 30px/16=1.875em */
+	}
+	
+	.content
+	{
+		margin-top: 1px;
+	}
+   
+   
+}
+
+
