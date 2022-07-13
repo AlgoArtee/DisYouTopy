@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	background-image: url(../img/bgd/main_bgd.jpg);
+	
+	font-size: 18px;
+}
+
+
+.main-header
+{
+	background-color: #75B379;
+	background: linear-gradient(to bottom, #75B379 0%, #75B379 50%, #000000 100%);
+	
+	height:200px;
+}
+
+
+.main-footer
+{
+	background-color: #075C0C;
+	background: linear-gradient(to bottom, #C7DBC9 0%, #75B379 50%, #075C0C 100%);
+	
+	height:150px;
+}
+
+
+.logoTitle
+{
+
+	text-align: center;
+	
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 5rem;
+}
+
+.forumSubTitle
+{
+	margin-left: 55%;
+	
+	font-style: italic;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 30px;
+}
