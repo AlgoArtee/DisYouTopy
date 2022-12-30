@@ -34,9 +34,9 @@ String username = (String) session.getAttribute("username");
 	<header class="main-header">
 		<div class="logoTitle">
 			<% if (username == null){%>
-				<a href="../index.jsp">DisYouTopy</a>
-				<% }else{ %>
-				<a href="DisYouTopyProfile.jsp">DisYouTopy</a>
+			<a href="../index.jsp">DisYouTopy</a>
+			<% }else{ %>
+			<a href="DisYouTopyProfile.jsp">DisYouTopy</a>
 			<% } %>
 		</div>
 		<div class="forumSubTitle">Forums. Madly in Glove.</div>
@@ -73,25 +73,29 @@ String username = (String) session.getAttribute("username");
 		<tr>
 			<td><%=e.getUserID()%></td>
 			<td><%=e.getQuestion()%></td>
-			
+
 			<!-- Table for Answers within Forum Table -->
 			<td>
-			
-			<table class="answer">
-				
+
+				<table class="answer">
+
 					<% for (String answer: e.getAnswers())
 					{
-						%>   <tr><td class="answer"><%=answer%> </td>
-							
-							
+						%>
+					<tr>
+						<td class="answer"><%=answer%></td>
+
+
 						<% 
 					}		
-					%><td class="addAnswer" rowspan=<%=e.getAnswers().size() %>>Add Answer</td></tr> 
-				
-			</table>
-						
+					%><td class="addAnswer" rowspan=<%=e.getAnswers().size() %>>Add
+							Answer</td>
+					</tr>
+
+				</table>
+
 			</td>
-			
+
 		</tr>
 		<%
 			}

@@ -3,10 +3,10 @@
 @import
 	url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-:root { 
-	--error-color: #dc3545; 
-	--success-color: #28a745; 
-	--warning-color: #ffc107;
+:root { -
+	-error-color: #dc3545; -
+	-success-color: #28a745; -
+	-warning-color: #ffc107;
 }
 
 * {
@@ -44,8 +44,7 @@ body {
 	font-size: 5em;
 }
 
-.logoTitle a
-{
+.logoTitle a {
 	text-decoration: none;
 	color: black;
 }

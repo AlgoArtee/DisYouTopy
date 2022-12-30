@@ -34,9 +34,11 @@ String picRelPath = "../img/madScientist.png";
 
 <!-- CSS section -->
 
-<link rel="stylesheet" type="text/css" rel="noopener" href="../css/index.css">
+<link rel="stylesheet" type="text/css" rel="noopener"
+	href="../css/index.css">
 <% if (username != null){%>
-<link rel="stylesheet" type="text/css" rel="noopener" href="../css/profile.css">
+<link rel="stylesheet" type="text/css" rel="noopener"
+	href="../css/profile.css">
 <% } %>
 
 
@@ -48,7 +50,7 @@ String picRelPath = "../img/madScientist.png";
 	<div class="wrapper">
 		<header class="main-header">
 			<div class="logoTitle">DisYouTopy</div>
-			
+
 			<% if (username != null){%>
 			<div id="userArea">
 				<img alt="User Picture" src="<%=picRelPath%>">
@@ -58,7 +60,7 @@ String picRelPath = "../img/madScientist.png";
 
 			</div>
 			<% } %>
-			
+
 		</header>
 
 
@@ -140,10 +142,10 @@ String picRelPath = "../img/madScientist.png";
 			</div>
 
 		</article>
-		
-		
+
+
 		<% if (username != null){%>
-		
+
 		<aside class="laboratory">
 
 
@@ -244,7 +246,7 @@ String picRelPath = "../img/madScientist.png";
 
 
 		</aside>
-		
+
 		<% } %>
 
 
@@ -254,29 +256,29 @@ String picRelPath = "../img/madScientist.png";
 
 
 			<% if (username == null){%>
-			
+
 			<div class="signIn">
-				
+
 				<!-- 
 				<p>Laboratory Area
 				<p>
 					<br>
 				<p>Sign In at Own Risk!
 				<p>-->
-				<br>	<br>
-					
+				<br> <br>
+
 				<div id="testTubeLabel">
 					<form action="../DisYouTopyProfile" method="post">
-	
-						<label for="username">User Name:</label><br> 
-						<input type="text" class="inputSignIn" name="username"
-							value="mad_scientist_h4x0r_88"><br>
-						<label for="password">Password:</label><br> <input type="text" class="inputSignIn"
-							id="password" name="password" value="beware_my_pippette123"><br>
-	
-						<input class="button" name="Sign In" type="submit" value="Sign In">
+
+						<label for="username">User Name:</label><br> <input
+							type="text" class="inputSignIn" name="username"
+							value="mad_scientist_h4x0r_88"><br> <label
+							for="password">Password:</label><br> <input type="text"
+							class="inputSignIn" id="password" name="password"
+							value="beware_my_pippette123"><br> <input
+							class="button" name="Sign In" type="submit" value="Sign In">
 					</form>
-				
+
 				</div>
 			</div>
 
@@ -285,7 +287,7 @@ String picRelPath = "../img/madScientist.png";
 				<p>
 				<p>
 				<div id="signOutButton">
-					
+
 					<a href="../index.jsp">Sign Out</a>
 				</div>
 
@@ -308,8 +310,8 @@ String picRelPath = "../img/madScientist.png";
 		<div class="placeholder"></div>
 
 		<div class="catshop"></div>
-		
-		
+
+
 		<div class="placeholder1"></div>
 		<div class="placeholder2"></div>
 		<div class="placeholder3"></div>

@@ -29,8 +29,7 @@ body {
 	font-size: 5rem;
 }
 
-.logoTitle a
-{
+.logoTitle a {
 	text-decoration: none;
 	color: black;
 }
@@ -40,7 +39,6 @@ body {
 	font-style: italic;
 	font-family: 'Annie Use Your Telescope', cursive;
 	font-size: 30px;
-	
 }
 
 #forumIntro {
@@ -58,7 +56,6 @@ body {
 	position: absolute;
 	top: 259px;
 	margin-left: 25%;
-
 }
 
 #forumPost div input {
@@ -96,25 +93,19 @@ body {
 		#000000 100%);
 }
 
-#forumEntries td .answer
-{
+#forumEntries td .answer {
 	width: 100%;
-	
 	color: black;
 }
 
-#forumEntries td .answer td
-{
+#forumEntries td .answer td {
 	width: 100%;
-	background: linear-gradient(to bottom, #75B379 10%, #FFF 25%, #FFF 75%,
-		#75B379 100%);
+	background: linear-gradient(to bottom, #75B379 10%, #FFF 25%, #FFF 75%, #75B379 100%
+		);
 	color: #75B379;
-	
 	border: none;
-	
 }
 
-.addAnswer
-{
+.addAnswer {
 	text-align: center;
 }

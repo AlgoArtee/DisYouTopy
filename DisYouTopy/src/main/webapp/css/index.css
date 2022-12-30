@@ -10,8 +10,8 @@
 }
 
 body {
-	
-	/**/background-color: #C7DBC9;
+	/**/
+	background-color: #C7DBC9;
 	background-image: url(../img/bgd/index_page_bgrd.png);
 	/*background-image: url(../img/bgd/dna_bgd.png);
 	background-repeat: no-repeat;*/
@@ -19,15 +19,13 @@ body {
 	font-size: 18px;
 }
 
-a
-{
+a {
 	text-decoration: none;
 	color: black;
 }
 
 .wrapper {
 	/**/
-
 	height: 2000px;
 }
 
@@ -35,14 +33,10 @@ a
 	background-color: #C7DBC9;
 	background: linear-gradient(to bottom, #75B379 0%, #75B379 50%, #C7DBC9 100%);
 }*/
-
 .main-footer {
 	background-color: #075C0C;
 	background: linear-gradient(to bottom, #C7DBC9 0%, #75B379 50%, #075C0C 100%);
 }
-
-
-
 
 /*Grid Layout Elements*/
 .main-header {
@@ -61,8 +55,7 @@ a
 	grid-area: sidebar;
 }
 
-.signUp
-{
+.signUp {
 	grid-area: signup;
 }
 
@@ -74,21 +67,19 @@ a
 	grid-area: footer;
 }
 
-.forum
-{
+.forum {
 	grid-area: forum;
 }
 
-.shop
-{
+.shop {
 	grid-area: shop;
 }
-.experiment_of_the_day
-{
+
+.experiment_of_the_day {
 	grid-area: exp;
 }
-.history
-{
+
+.history {
 	grid-area: history;
 }
 
@@ -96,13 +87,8 @@ a
 .wrapper {
 	display: grid;
 	grid-gap: 10px;
-	grid-template-areas: 
-	"header" 
-	"nav" 
-	"content" 
-	"sidebar" 
-	"catshop"
-	"footer";
+	grid-template-areas: "header" "nav" "content" "sidebar" "catshop"
+		"footer";
 }
 
 /* --- Header Style*/
@@ -146,54 +132,40 @@ a
 	width: 100%;
 }
 
-
 /* Design for different Viewports */
 @media ( min-width : 500px) {
 	.wrapper {
 		grid-template-columns: 4fr;
-		grid-template-areas: 
-		"header" 
-		"nav" 
-		"sidebar "
-		"content "
-		"footer footer";
+		grid-template-areas: "header" "nav" "sidebar " "content "
+			"footer footer";
 	}
 	nav ul {
 		display: flex;
 		justify-content: space-between;
 	}
-	
 }
 
 @media ( min-width : 700px) {
 	.wrapper {
 		grid-template-columns: 1fr 4fr 1fr;
-		grid-template-areas: 
-		"header	header	header" 
-		"nav	nav		sidebar"
-		"content	content	sidebar"
-		"content	content	sidebar"
-		"content	content	signup" 
-		"content	content	forum"
-		"content	content	catshop"
-		"content	content	shop"
-		"content	content	exp"
-		"content	content	history"
-		"footer	footer	footer"
-		"footer	footer	footer"
+		grid-template-areas: "header	header	header" "nav	nav		sidebar"
+			"content	content	sidebar" "content	content	sidebar"
+			"content	content	signup" "content	content	forum"
+			"content	content	catshop" "content	content	shop"
+			"content	content	exp" "content	content	history"
+			"footer	footer	footer" "footer	footer	footer"
 	}
-	
-	.wrapper
-	{
+	.wrapper {
 		/*background-image: url(../img/bgd/dna_green_mecha1.png);
 		background-repeat: no-repeat;
 		background-size: cover;*/
+		
 	}
 
 	/* --- Header Style*/
 	.main-header {
 		height: 150px;
-		
+
 		/*border-color: #75B379;
 		border-left-style: solid;
 		border-bottom-style: solid;	
@@ -204,10 +176,8 @@ a
 		border-color: #003F04;
 		
 		*/
-
 	}
 	.main-nav {
-	
 		height: 100px;
 		/*background-color: #C7DBC9;
 		margin-top: -56px;
@@ -219,13 +189,9 @@ a
 		border-bottom-left-radius: 50%;
 		border-bottom-right-radius: 50%;*/
 	}
-	
-	
 	.main-nav ul {
 		flex-direction: row;
-		
 		padding: 2%;
-		
 	}
 	.main-nav ul li {
 		/*float: left;*/
@@ -234,14 +200,11 @@ a
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	/*.main-nav ul li:nth-of-type(1), .main-nav ul li:nth-of-type(2)
 	{
 
 	}*/
-	
-	
-	
 	.main-nav ul li a {
 		line-height: 1.5;
 		color: #075C0C;
@@ -272,11 +235,7 @@ a
 		margin-left: 20%;
 		font-style: italic;
 	}
-	
-	
-	
-	#mainDisplay
-	{
+	#mainDisplay {
 		margin-top: -1%;
 		margin-right: 3%;
 		padding-top: 3%;
@@ -285,41 +244,32 @@ a
 		height: 450px;
 		width: 89%;
 		text-align: center;
-		
+
 		/*border-top-style: dotted;
 		border-left-style: dotted;
 		border-width: 1px;
 		border-color: #003F04;
 		border-top-left-radius: 20%;
 		border-bottom-right-radius: 20%;
-		box-shadow: 10px 10px 5px #003F04;*/		
-	
+		box-shadow: 10px 10px 5px #003F04;*/
 	}
-	
-	
 	.overlay {
-	  position: absolute;
-	  background: rgba(117,179,121, 1);
-	  width: 100%;
-	  transition: .7s ease;
-	  
-	  opacity:0;
-	  
-	  color: #003F04;
-	  font-size: 20px;
-	  padding: 20px;
-	  text-align: center;
-	  
-	/*z-index: 1000;*/
+		position: absolute;
+		background: rgba(117, 179, 121, 1);
+		width: 100%;
+		transition: .7s ease;
+		opacity: 0;
+		color: #003F04;
+		font-size: 20px;
+		padding: 20px;
+		text-align: center;
+
+		/*z-index: 1000;*/
 	}
-	
-	.accordion > div:hover .overlay {
-  		opacity: 1;
-  		margin-top: 40%;
+	.accordion>div:hover .overlay {
+		opacity: 1;
+		margin-top: 40%;
 	}
-	
-	
-	
 	.articlet {
 		float: left;
 		margin-top: 10%;
@@ -327,12 +277,9 @@ a
 		padding-top: 3%;
 		padding-right: 3%;
 		padding-left: 3%;
-		
 		height: 21%;
 		width: 23%;
-		
 		text-align: center;
-		
 		border-top-style: dotted;
 		border-left-style: dotted;
 		border-width: 1px;
@@ -340,94 +287,62 @@ a
 		border-top-left-radius: 20%;
 		border-bottom-right-radius: 20%;
 		box-shadow: 10px 10px 5px #003F04;
-		
 		overflow: hidden;
-		
 		transition: 1.3s;
-
 	}
-	
-	.articlet:hover
-	{
+	.articlet:hover {
 		height: 40%;
 	}
-	
-	.articletsImg
-	{
+	.articletsImg {
 		height: 200px;
 		width: 200px;
 		margin: auto;
-	
 	}
-	
-	.articletTitle
-	{
+	.articletTitle {
 		font-family: 'Fredericka the Great', cursive;
 		font-size: 20px;
-		
-
-	
 	}
-	
-	#forum
-	{
-		background-image:url(../img/articlets/forum_min.png);
+	#forum {
+		background-image: url(../img/articlets/forum_min.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-
 		border-top-left-radius: 1%;
 		border-top-right-radius: 50%;
 		border-bottom-left-radius: 50%;
 		border-bottom-right-radius: 1%;
 	}
-	
-	#openProjects
-	{
-		background-image:url(../img/articlets/openprojects_min.png);
+	#openProjects {
+		background-image: url(../img/articlets/openprojects_min.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-
 		border-top-left-radius: 50%;
 		border-top-right-radius: 50%;
 		border-bottom-left-radius: 50%;
-		border-bottom-right-radius: 50%;	
-	
-	
+		border-bottom-right-radius: 50%;
 	}
-	
-	#signInUp
-	{
-		background-image:url(../img/articlets/signinup_min.png);
+	#signInUp {
+		background-image: url(../img/articlets/signinup_min.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-
 		border-top-left-radius: 50%;
 		border-top-right-radius: 1%;
 		border-bottom-left-radius: 1%;
-		border-bottom-right-radius: 50%;	
-	
-	
+		border-bottom-right-radius: 50%;
 	}
-	
-	
 	.middle {
 		border-top-left-radius: 0%;
 		border-bottom-right-radius: 0%;
 		border-top-right-radius: 20%;
 		border-bottom-left-radius: 20%;
 	}
-	
 	.side {
 		margin-right: 10%;
-		
 		/*padding-left: 2%;*/
 		padding-bottom: 0px;
-		
 		height: 550px;
-		
 		border-top-style: dotted;
 		border-left-style: dotted;
 		border-width: 1px;
@@ -436,123 +351,79 @@ a
 		border-bottom-left-radius: 20%;
 		box-shadow: 5px 5px 5px #003F04;
 	}
-	
-	
-	#testTubeLabel
-	{
+	#testTubeLabel {
 		/*background-color:#fff;*/
 		/*background-image: url(../img/bgd/notebook-paper.png);
 		background-repeat: no-repeat;
 		background-size: cover;*/
-		
 		height: 100px;
 		width: 90%;
 		border-left: 5px solid #075C0C;
 		border-right: 5px solid #075C0C;
 		border-top: 1px solid #075C0C;
 		border-bottom: 1px solid #075C0C;
-		
 		padding-top: 5%;
 		padding-left: 2%;
 		padding-right: 2%;
 		margin-left: 2%;
 	}
-	
-	.inputSignIn
-	{
-	
-		/* */margin-left: 4%;
-		width: 80%; 
+	.inputSignIn {
+		/* */
+		margin-left: 4%;
+		width: 80%;
 		height: 30px;
-		
 	}
-	
-	.icon
-	{
+	.icon {
 		float: left;
 		width: 20px;
-	
 	}
-	
-	
-	.signInButton
-	{
-	
+	.signInButton {
 		width: 10rem;
-		
-		margin-left: 30%; 
-		margin-top: 6px; 
-		
-		background-color: #75B379; 
+		margin-left: 30%;
+		margin-top: 6px;
+		background-color: #75B379;
 		border-style: outset;
-		
 		border-top-right-radius: 50%;
 		border-top-left-radius: 50%;
 		border-bottom-right-radius: 50%;
 		border-bottom-left-radius: 50%;
-	
 		padding: 15px 32px;
-		
 		color: white;
 		text-align: center;
 		text-decoration: none;
 		font-size: 1rem;
-		
 		display: block;
-	
-
-
 	}
-	
-	
-	#signUpButton 
-	{
+	#signUpButton {
 		width: 10rem;
 		height: 40px;
-		
 		margin-left: 18%;
 		margin-top: 1%;
 		margin-bottom: 1%;
-		
 		background-color: #75B379;
 		border-style: outset;
-		
 		border-top-right-radius: 50%;
 		border-top-left-radius: 50%;
 		border-bottom-right-radius: 50%;
 		border-bottom-left-radius: 50%;
-		
 		line-height: 40px;
 		text-align: center;
 		text-decoration: none;
 		font-size: 1rem;
-		
 		display: block;
-	
-	
 	}
-	
-	
-	#signUpButton a
-	{
+	#signUpButton a {
 		color: white;
-		
 		text-decoration: none;
 		font-size: 1rem;
 	}
-	
-		
-	.signUp
-	{
+	.signUp {
 		margin-right: 10%;
 		margin-top: -180px;
-		
-		height:250px;
-		
+		height: 250px;
 		background-image: url(../img/SignUpBot.png);
 		background-repeat: no-repeat;
 		background-position: center;
-		
 		text-align: center;
 		border-top-style: dotted;
 		border-left-style: dotted;
@@ -561,16 +432,10 @@ a
 		border-top-left-radius: 40%;
 		border-top-right-radius: 40%;
 		box-shadow: 5px 5px 5px #003F04;
-		
-	
 	}
-	
-	
-	
 	.catshop {
 		margin-right: 10%;
 		/*margin-top: -20%;*/
-		
 		text-align: center;
 		border-top-style: dotted;
 		border-left-style: dotted;
@@ -580,16 +445,11 @@ a
 		border-top-right-radius: 40%;
 		box-shadow: 5px 5px 5px #003F04;
 	}
-	
-	.forum
-	{
-	
+	.forum {
 		/*height: 200px;*/
 		margin-right: 10%;
-		
 		text-align: center;
 		/*line-height: 200px;*/
-		
 		border-top-style: dotted;
 		border-left-style: dotted;
 		border-width: 1px;
@@ -597,18 +457,11 @@ a
 		border-bottom-left-radius: 40%;
 		border-bottom-right-radius: 40%;
 		box-shadow: 5px 5px 5px #003F04;
-	
 	}
-	
-	.sideText
-	{
+	.sideText {
 		margin-top: 20px;
 	}
-	
-	
-	.shop
-	{
-	
+	.shop {
 		margin-right: 10%;
 		text-align: center;
 		border-top-style: dotted;
@@ -618,12 +471,8 @@ a
 		border-bottom-left-radius: 40%;
 		border-bottom-right-radius: 40%;
 		box-shadow: 5px 5px 5px #003F04;
-	
 	}
-	
-	.experiment_of_the_day
-	{
-	
+	.experiment_of_the_day {
 		margin-right: 10%;
 		text-align: center;
 		border-top-style: dotted;
@@ -633,13 +482,8 @@ a
 		border-top-left-radius: 40%;
 		border-top-right-radius: 40%;
 		box-shadow: 5px 5px 5px #003F04;
-	
-	}	
-	
-	
-	.history
-	{
-	
+	}
+	.history {
 		margin-right: 10%;
 		text-align: center;
 		border-top-style: dotted;
@@ -649,30 +493,18 @@ a
 		border-bottom-left-radius: 40%;
 		border-bottom-right-radius: 40%;
 		box-shadow: 5px 5px 5px #003F04;
-	
 	}
-	
-	
-	.main-footer 
-	{
-		
-		position:fixed;
-		top:850px;
-		
-		width:100%;
+	.main-footer {
+		position: fixed;
+		top: 850px;
+		width: 100%;
 		height: 100px;
-		
 		line-height: 100px;
-		
 		padding-left: 10px;
-		
 	}
-	
-	#socialMedia
-	{
-		margin-top:0px;
-		margin-right:50%;
+	#socialMedia {
+		margin-top: 0px;
+		margin-right: 50%;
 		float: right;
-	
 	}
 }

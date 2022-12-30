@@ -1,43 +1,29 @@
 @charset "ISO-8859-1";
 
-.projects
-{
+.projects {
 	grid-area: projects;
 }
 
-.project
-{
-	
-	float:left;
+.project {
+	float: left;
 }
 
 @media ( min-width : 700px) {
-	/**/.wrapper {
+	/**/
+	.wrapper {
 		grid-template-columns: 1fr 4fr 1fr;
-		grid-template-areas: 
-		"header	nav	sidebar" 
-		"laboratory	content	sidebar"
-		"laboratory	content	signout"
-		"laboratory	content	forum"
-		"laboratory	content	catshop"
-		"laboratory	content shop"
-		"laboratory	content exp"
-		"laboratory	content history"
-		"projects projects projects"
-		"projects projects projects"
-		"projects projects projects"
-		"footer	footer	footer"
-		"footer	footer	footer"
+		grid-template-areas: "header	nav	sidebar" "laboratory	content	sidebar"
+			"laboratory	content	signout" "laboratory	content	forum"
+			"laboratory	content	catshop" "laboratory	content shop"
+			"laboratory	content exp" "laboratory	content history"
+			"projects projects projects" "projects projects projects"
+			"projects projects projects" "footer	footer	footer"
+			"footer	footer	footer"
 	}
-	
-	
-	
-	.project
-	{
-		margin-left:10%;
-		margin-right:10%;
-		margin-top:10%;
-		
+	.project {
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 10%;
 		border-top-style: dotted;
 		border-left-style: dotted;
 		border-width: 1px;
@@ -45,35 +31,21 @@
 		border-top-left-radius: 10%;
 		border-bottom-right-radius: 10%;
 		box-shadow: 10px 10px 5px #003F04;
-		
 		padding: 5%;
-		
 		font-family: 'Indie Flower', cursive;
 		font-size: 2rem;
-	
 	}
-	
-	.signOut
-	{
-		
+	.signOut {
 		margin-top: -150px;
-	
 	}
-	
-	.articlet:hover
-	{
+	.articlet:hover {
 		background-color: white;
 		height: 350px;
 	}
-	
-	.content
-	{
+	.content {
 		text-align: left;
 		font-family: 'Indie Flower', cursive;
 		font-size: 2rem;
-		
-		margin-left: -200px;		
-	
+		margin-left: -200px;
 	}
-	
 }
