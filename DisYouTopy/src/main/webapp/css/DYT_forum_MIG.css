@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../img/bgd/forum_bgd.jpg);
+	background-size: cover;
+	font-size: 18px;
+}
+
+.main-header {
+	background-color: #75B379;
+	background: linear-gradient(to bottom, #75B379 0%, #75B379 50%, #000000 100%);
+	height: 200px;
+}
+
+.main-footer {
+	background-color: #075C0C;
+	background: linear-gradient(to bottom, #C7DBC9 0%, #75B379 50%, #075C0C 100%);
+	height: 150px;
+}
+
+.logoTitle {
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 5rem;
+}
+
+.logoTitle a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.forumSubTitle {
+	margin-left: 55%;
+	font-style: italic;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 30px;
+	
+}
+
+#forumIntro {
+	/*margin-left:20%;*/
+	color: white;
+	height: 150px;
+	line-height: 150px;
+	font-size: 1.5rem;
+	padding-right: 5px;
+	background: linear-gradient(to bottom, #000000 10%, #75B379 25%, #75B379 75%,
+		#000000 100%);
+}
+
+#forumPost {
+	position: absolute;
+	top: 259px;
+	margin-left: 25%;
+
+}
+
+#forumPost div input {
+	font-size: 25px;
+}
+
+#thought {
+	width: 700px;
+}
+
+#forumEntries {
+	width: 70%;
+	margin-left: 15%;
+}
+
+#forumEntries th, #forumEntries td {
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+#forumEntries th {
+	background: linear-gradient(to bottom, #75B379 10%, #000000 25%, #000000 75%,
+		#75B379 100%);
+	color: white;
+}
+
+#forumEntries tr {
+	height: 100px;
+}
+
+#forumEntries td {
+	color: white;
+	background-color: #C7DBC9;
+	background: linear-gradient(to bottom, #000000 10%, #75B379 25%, #75B379 75%,
+		#000000 100%);
+}
+
+#forumEntries td .answer
+{
+	width: 100%;
+	
+	color: black;
+}
+
+#forumEntries td .answer td
+{
+	width: 100%;
+	background: linear-gradient(to bottom, #75B379 10%, #FFF 25%, #FFF 75%,
+		#75B379 100%);
+	color: #75B379;
+	
+	border: none;
+	
+}
+
+.addAnswer
+{
+	text-align: center;
+}

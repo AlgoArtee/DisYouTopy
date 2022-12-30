@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.bubblewrap 
+{
+	margin-top:10%;
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+	
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+	
+	/*background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);*/
+}
+
+canvas 
+{
+	width: 100%;
+	height: 100%;
+}
